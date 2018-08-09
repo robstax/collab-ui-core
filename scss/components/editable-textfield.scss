@@ -13,7 +13,7 @@
 
 @include exports('cui-editable-textfield') {
   .#{$cui}-editable-textfield {
-    
+
     & > &__button {
       @include radius($global-radius);
 
@@ -26,6 +26,9 @@
         .#{$dark-class} & {
           background-color: $white-24;
         }
+      }
+      &:before {
+        content: '\00a0';
       }
     }
 
